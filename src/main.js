@@ -86,11 +86,11 @@ const displayWeatherData = (currentData, forecastData) => {
         <!-- sunrise and sunset time -->
         <div class="flex items-center justify-around mt-2 gap-x-2">
           <div id="sunrise-time" class="px-9 py-1 rounded-xl shadow-2xl border border-white/5 flex-1 flex justify-center items-center flex-col">
-            <img src="src/svgs/sunrise.svg" width="70">
+            <img src="/src/svgs/sunrise.svg" width="70">
             <p class="font-semibold font-poppins text-center">${new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: 'numeric'}).format(new Date(currentData.sys.sunrise * 1000))}</p>
           </div>
           <div id="sunset-time" class="px-9 py-1 rounded-xl shadow-2xl border border-white/5 flex-1 flex justify-center items-center flex-col">
-            <img src="src/svgs/sunset.svg" width="70">
+            <img src="/src/svgs/sunset.svg" width="70">
             <p class="font-semibold font-poppins text-center">${new Intl.DateTimeFormat('en-US', {hour: 'numeric', minute: 'numeric'}).format(new Date(currentData.sys.sunset * 1000))}</p>
           </div>
         </div>
