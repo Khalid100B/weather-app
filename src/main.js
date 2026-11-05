@@ -42,7 +42,7 @@ const displayWeatherData = (currentData, forecastData) => {
           <p id="curr-day" class="font-bold text-4xl font-surfer">${new Intl.DateTimeFormat('en-US', {weekday: 'long'}).format(new Date(currentData.dt * 1000))}</p>
           <p id="curr-date" class="text-lg font-poppins text-white/85">${new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).format(new Date(currentData.dt * 1000))}</p>
           <div class="flex items-center justify-center gap-x-1 -ml-4">
-            <img src="src/svgs/location-svgrepo-com.svg" width="30">
+            <img src="/src/svgs/location-svgrepo-com.svg" width="30">
             <p id="curr-city" class="text-white/85"><span>${currentData.name}</span>, <span>${currentData.sys.country}</span></p>
           </div>
         </div>
