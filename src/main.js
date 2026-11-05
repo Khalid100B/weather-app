@@ -42,7 +42,7 @@ const displayWeatherData = (currentData, forecastData) => {
           <p id="curr-day" class="font-bold text-4xl font-surfer">${new Intl.DateTimeFormat('en-US', {weekday: 'long'}).format(new Date(currentData.dt * 1000))}</p>
           <p id="curr-date" class="text-lg font-poppins text-white/85">${new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).format(new Date(currentData.dt * 1000))}</p>
           <div class="flex items-center justify-center gap-x-1 -ml-4">
-            <img src="/src/svgs/location-svgrepo-com.svg" width="30">
+            <img src="/svgs/location-svgrepo-com.svg" width="30">
             <p id="curr-city" class="text-white/85"><span>${currentData.name}</span>, <span>${currentData.sys.country}</span></p>
           </div>
         </div>
@@ -86,11 +86,11 @@ const displayWeatherData = (currentData, forecastData) => {
         <!-- sunrise and sunset time -->
         <div class="flex items-center justify-around mt-2 gap-x-2">
           <div id="sunrise-time" class="px-9 py-1 rounded-xl shadow-2xl border border-white/5 flex-1 flex justify-center items-center flex-col">
-            <img src="/src/svgs/sunrise.svg" width="70">
+            <img src="/svgs/sunrise.svg" width="70">
             <p class="font-semibold font-poppins text-center">${new Intl.DateTimeFormat('en-US', { hour: 'numeric', minute: 'numeric'}).format(new Date(currentData.sys.sunrise * 1000))}</p>
           </div>
           <div id="sunset-time" class="px-9 py-1 rounded-xl shadow-2xl border border-white/5 flex-1 flex justify-center items-center flex-col">
-            <img src="/src/svgs/sunset.svg" width="70">
+            <img src="/svgs/sunset.svg" width="70">
             <p class="font-semibold font-poppins text-center">${new Intl.DateTimeFormat('en-US', {hour: 'numeric', minute: 'numeric'}).format(new Date(currentData.sys.sunset * 1000))}</p>
           </div>
         </div>
